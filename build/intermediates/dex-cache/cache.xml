@@ -19,5 +19,14 @@
         sha1="42d19b380a14cd1873a3d09a42aa7a783824fc04">
         <dex dex="E:\TEC\PROYECTOS_EXTRA\Curso\DIA_02\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_85956e0871489cc774ba5296f68a4b3dcb6a558b\classes.dex" />
     </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\juamp\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="E:\TEC\PROYECTOS_EXTRA\Curso\DIA_02\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0_151226ed3cfb0871bbe7c98a080c00edde577b87\classes.dex" />
+    </item>
 
 </items>

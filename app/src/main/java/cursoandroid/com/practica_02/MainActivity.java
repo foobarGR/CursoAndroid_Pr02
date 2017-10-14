@@ -14,7 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
 
-public class MainActivity extends AppCompatActivity implements FragmentA.OnFragmentInteractionListener, FragmentB.OnFragmentInteractionListener{
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,31 +38,5 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnFragm
 
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
-    }
-
-    //ENVIAR MENSAJE B-->A
-    @Override
-    public void mandarMsj(String msj) {
-        View view = this.getCurrentFocus();
-        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-        FragmentB fb=(FragmentB)getSupportFragmentManager().findFragmentById(R.id.content_b);
-        fb.actualizarMsj(msj);
-
-
-    }
-
-
-    //ENVIAR MENSAJE A--> B
-    @Override
-    public void enviarMsj(String msj) {
-        View view = this.getCurrentFocus();
-        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-        FragmentA fa=(FragmentA)getSupportFragmentManager().findFragmentById(R.id.content_a);
-        fa.actualizarMsj(msj);
-    }
 }
